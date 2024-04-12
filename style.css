@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 nav {
@@ -10,7 +10,7 @@ h1 {
     color: red;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 100%;
     max-width: 80px;
 }
@@ -20,15 +20,16 @@ h1 {
     width: 2em;
 }
 
+
+
 .job-title {
-    background-color: grey;
-    opacity: 0.2;
+    background-color: rgb(117, 117, 117, 0.2);
     border-radius: 25px;
 }
 
-.job-title > *{
-    color: black;
-    opacity: 1;
+.job-title h5 {
+    color: rgba(0, 0, 0, 1);
+
 }
 
 .inicio-sesion {
@@ -37,3 +38,8 @@ h1 {
 
 }
 
+/* trabajos.html */
+
+.trabajos-cartas .card {
+    max-width: 100%;
+}
