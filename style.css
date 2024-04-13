@@ -1,45 +1,88 @@
 * {
-    /* border: 1px solid red; */
+  /* border: 1px solid red; */
 }
 
 nav {
-    background-color: white;
+  background-color: white;
 }
 
 h1 {
-    color: red;
+  color: red;
 }
 
 .navbar-brand img {
-    width: 100%;
-    max-width: 80px;
+  width: 100%;
+  max-width: 80px;
 }
 
 .nav-link svg {
-    color: black;
-    width: 2em;
+  color: black;
+  width: 2em;
 }
 
-
-
 .job-title {
-    background-color: rgb(117, 117, 117, 0.2);
-    border-radius: 25px;
+  background-color: rgb(117, 117, 117, 0.2);
+  border-radius: 25px;
 }
 
 .job-title h5 {
-    color: rgba(0, 0, 0, 1);
-
+  color: rgba(0, 0, 0, 1);
 }
 
 .inicio-sesion {
+  border: 1px solid grey;
+  border-radius: 25px;
+}
+
+/* landing.html */
+#carouselLandingPage {
+  max-width: 800px;
+  height: auto;
+}
+
+.servicio-card{
     border: 1px solid grey;
     border-radius: 25px;
+    padding: 10px;
+  }
 
+.servicio-card h1{
+  font-size: 1.5em;
+  color: blue;
 }
+
+.servicio-card p{
+    font-size: 1em;
+  }
 
 /* trabajos.html */
 
 .trabajos-cartas .card {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+/* trabajo-x.html */
+.trabajo-header h1 {
+  text-align: center;
+  color: blue;
+  text-wrap: wrap;
+}
+.trabajo-header svg {
+  max-width: 30px;
+}
+.trabajo-header img {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* productos.html */
+
+.producto-card .card {
+  max-width: 100%;
+}
+
+/* contacto.html */
+.contacto-detalle svg {
+    max-width: 30px;
+    margin-right: 5px;
 }

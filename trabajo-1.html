@@ -14,78 +14,84 @@
 
 <body>
     <!-- Sticky navbar -->
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container-fluid justify-content-between">
-            <!-- left elements -->
-            <div class="d-flex ms-0">
-                <a class="navbar-brand" href="#">
-                    <img src="https://img.logoipsum.com/330.svg" alt="" width="60%" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Pagina Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="trabajos.html">Nuestros Trabajos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- right elements -->
-            <div class="d-flex ms-auto">
-                <!-- usuario -->
-                <a class="nav-link mx-2" href="session.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="currentColor"
-                        class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
-                    <!-- carrito compra -->
-                    <a class="nav-link mx-2" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="currentColor"
-                            class="bi bi-cart" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                        </svg>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container-fluid justify-content-between">
+      <!-- left elements -->
+      <a class="navbar-brand" href="landing.html">
+        <img src="https://img.logoipsum.com/330.svg" alt="" width="60%" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="landing.html">Pagina Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trabajos.html">Nuestros Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <!-- right elements -->
+      <div class="d-flex ms-auto">
+        <!-- usuario -->
+        <a class="nav-link mx-2" href="session.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="currentColor"
+            class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+          </svg>
+          <!-- carrito compra -->
+          <a class="nav-link mx-2" href="#" data-bs-toggle="popover" data-bs-title="Carrito"
+          data-bs-content="Por implementar! Aca iria la informacion del carrito y un boton para confirmar compra">
+            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+      </div>
+    </div>
+  </nav>
 
     <main>
         <!-- descripcion y foto del trabajo -->
-        <div class="container">
-            <div class="row justify-content-center align-items-center g-2">
-                <div class="col-6">
-                    <a href="trabajos.html">Volver</a>
+        <div class="container trabajo-header">
+            <div class="row justify-content-center align-items-center mx-auto">
+                <div class="col-2">
+                    <a href="trabajos.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                            <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                          </svg>
+                    </a>
                 </div>
-                <div class="col-6">
-                    <h1>Titulo asdnsjkdfhdkjg</h1>
+                <div class="col-10">
+                    <h1>Titulo</h1>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center mt-2">
-                <div class="col-12 col-sm 6">
-                    <img src="https://placehold.co/100x100" alt="">
+            <div class="row justify-content-center align-items-center mx-auto">
+                <div class="col-12 col-sm-6 ">
+                    <img src="https://placehold.co/400x400" alt="">
                 </div>
-                <div class="col-12 col-sm 6">
-                    <p>descripcion de la pega</p>
+                <div class="col-12 col-sm-6">
+                    <p>descripcion del trabajo:
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis eligendi id, soluta laudantium saepe magni odio dolorem quia dolorum, iure facere molestiae quos voluptates praesentium eos alias? Veniam, dicta ipsa!
+                    </p>
                 </div>
             </div>
         </div>
@@ -94,8 +100,16 @@
 
         <!-- galeria -->
         <div class="trabajos-galeria">
-            <div class="container-fluid">
-                <div class="row justify-content-center align-items-center g-2 d-flex flex-wrap">
+            <div class="container">
+                <div
+                    class="row justify-content-center align-items-center mx-auto"
+                >
+                    <div class="col">
+                        <h1>Fotos del trabajo</h1>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center align-items-center mx-auto d-flex flex-wrap">
                     <!-- foto 1-->
                     <div class="col-6 col-md-4 p-1">
                         <img src="https://placehold.co/100x100" alt="">
@@ -117,12 +131,6 @@
                 </div>
 
             </div>
-
-
-
-
-
-
 
     </main>
 
