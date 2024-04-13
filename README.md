@@ -1,12 +1,7 @@
 # tallerrayomakween
 
-Nos falta
-- crear pagina de compras de productos
-- crear pagina para contratar servicios
-- crear pagina de "nuestros trabajos"
-- documentar en ERS
-- dejar linda la pagina :)
-
-
-Por modificar:
+Por hacer:
+- Defnir el diseño general del sitio
+- Agregar mas CSS para lograr el diseño previamente definido
+- Agregar scripts JS para dar funcionalidad al sitio
 
