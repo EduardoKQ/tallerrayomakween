@@ -53,7 +53,7 @@
           </svg>
           <!-- carrito compra -->
           <a class="nav-link mx-2" href="#" data-bs-toggle="popover" data-bs-title="Carrito"
-          data-bs-content="Por implementar! Aca iria la informacion del carrito y un boton para confirmar compra">
+            data-bs-content="Por implementar! Aca iria la informacion del carrito y un boton para confirmar compra">
             <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="currentColor" class="bi bi-cart"
               viewBox="0 0 16 16">
               <path
@@ -128,21 +128,44 @@
 
     <hr>
 
+    <!-- nuestras marcas -->
+    <!-- 
+      toyota
+      chevroet
+      kia
+      nissan
+      ford
+      hyundai
+      bmw
+      Peugeot
+      suzuki
+      mg
+      chery
+      mazda
+      jac
+      volkswagem
+      citroen
+      mitsubishi -->
     <div>
-      <div
-        class="container"
-      >
-        <div
-          class="row justify-content-center align-items-center g-2"
-        >
-          <div class="col"><h1>
-            Servicios
-          </h1></div>
+      <div class="container">
+
+      </div>
+
+    </div>
+
+
+    <!-- servicios -->
+    <div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <h1>
+              Servicios
+            </h1>
+          </div>
         </div>
-        <div
-          class="row justify-content-center align-items-center g-2"
-        >
-          <!-- servicio -->
+        <div class="row justify-content-center align-items-center g-2">
+          <!-- card servicio -->
           <div class="col-12 col-sm-6">
             <div class="servicio-card">
               <h1>Mantenimiento y servicio de rutina</h1>
@@ -170,16 +193,138 @@
             </div>
           </div>
         </div>
-        
-        
+
+
       </div>
-      
+
     </div>
+
+    <!-- encuentranos -->
+    <div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center mx-auto">
+          <div class="col-12 col-sm-6">
+            <h1>Visitanos!</h1>
+            <h2>Estamos ubicados en</h2>
+            <p>Calle XXXX,</p>
+            <p>Comuna </p>
+            <p>Ciudad </p>
+            <h2>Horario:</h2>
+            <p>Lunes a Viernes</p>
+            <p>8:00am - 6:00pm</p>
+            <p>Sabado</p>
+            <p>9:00am - 2:00pm</p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h1>
+              <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                    style="height:100%;width:100%;border:0;" frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Rapa+Nui,+Easter+Island,+Chile&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div>
+            
+              </div>
+            </h1>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- contacto -->
+    <!-- formulario -->
+    <div class="contacto-formulario">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <p>¿Necesitas escribirnos? ¿Tienes alguna duda? Deja tu mensaje aqui</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <form class="form-validation" novalidate>
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="inputNombreContacto">Nombre</label>
+                  <input type="text" class="form-control" id="inputNombreContacto" placeholder="Nombre" required />
+                  <div class="invalid-feedback">Ingrese su nombre</div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputCorreoContacto">Correo</label>
+                  <input type="email" class="form-control" id="inputCorreoContacto" placeholder="Correo" required />
+                  <div class="invalid-feedback">Ingrese un correo valido</div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputFonoContacto">Fono</label>
+                  <input type="tel" class="form-control" id="inputFonoContacto" placeholder="+569..." required />
+                  <div class="invalid-feedback">Ingrese un numero de telefono valido</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputTextoContacto" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="inputTextoContacto" rows="4" required></textarea>
+                <div class="invalid-feedback">Ingrese su mensaje</div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
 
   </main>
 
 
+  <footer>
 
+
+    <h1>cositas del footer</h1>
+  </footer>
+
+
+
+
+
+  <!-- script de validaciones -->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      "use strict";
+      window.addEventListener(
+        "load",
+        function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName("form-validation");
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(
+            forms,
+            function (form) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            }
+          );
+        },
+        false
+      );
+    })();
+  </script>
 
   <!-- los script los cargamos al final -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
