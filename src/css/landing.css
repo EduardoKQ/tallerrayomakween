@@ -104,13 +104,15 @@ footer {
   font-size: small;
 }
 
-.codigo-qr {
-    width: 15%;
-    height: 15%;
-    min-width: 150px;
+.click-qr{
+    fill: none;
+    color: white;
+    font-weight: bold;
 }
 
-.codigo-qr img{
-    width: 50%;
-    height: 50%;
+.codigoqr {
+    width: 100%;
+    height: auto;
+    user-select: none;
 }
+

@@ -380,16 +380,29 @@
       <div class="cp col">
         <p><i>© 2024 Equipo 5</i></p>
       </div>
-    </div>
-
-    <div
-      class="row justify-content-center align-items-center"
-    >
-    <div class="codigo-qr">
-      <img src="../../imagenes/qr-code.png" alt="codigo qr no carga?">
-    </div>
+      <div class="click-qr cp col">
+        <a data-bs-toggle="modal" data-bs-target="#exampleModal"><p>Click aqui para codigo QR</p></a>
+      </div>
     </div>
   </footer>
+
+
+  <!-- Modal de codigo QR -->
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">test</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Ok!"></button>
+      </div>
+      <div class="modal-body">
+        <!-- contenido del Modal -->
+        <img class="codigoqr" src="/imagenes/qr-code.png" alt="imagen del codigo QR">
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
