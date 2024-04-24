@@ -10,6 +10,12 @@
 #ade1ee	(173,225,238) 
 */
 
+.tc {
+  background-color: aqua;
+  border: 1px solid black;
+  height: 10px;
+}
+
 nav {
   background-color: white;
 }
