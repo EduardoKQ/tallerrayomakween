@@ -1,0 +1,110 @@
+* {
+  /* border: 1px solid red; */
+}
+
+/* Navbar */
+.logo-marca-auto {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.215);
+  box-shadow: 0px 2px 5px #862922a8;
+}
+.navbar-brand img {
+  max-width: 120px;
+}
+.logo-header {
+  width: auto;
+  height: auto;
+}
+
+/* Marcas autos */
+
+.caja-marca {
+  position: relative;
+  /* border: 1px solid grey; */
+  margin: auto;
+  padding: 0px 5px;
+  max-width: 70%;
+  max-height: 70%;
+  text-align: center;
+  font-size: small;
+  user-select: none;
+}
+
+.caja-marca p {
+  visibility: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+  /* estilo texto */
+  width: 100px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid black;
+
+}
+
+.caja-marca:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+
+.caja-marca img {
+    width: 15vh;
+    height: 100%;
+    transition: filter 0.3s, opacity 0.3s;
+  }
+
+.caja-marca:hover img {
+    filter: blur(8px);
+    opacity: 0.6;
+  }
+
+/* Footer */
+footer {
+  background-color: brown;
+  color: white;
+}
+
+.datos-contacto {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.datos-contacto p {
+  margin-bottom: 0;
+}
+
+.footer-redes {
+  display: flex;
+}
+
+.logos-redes {
+  width: 100%;
+  text-align: center;
+}
+
+.logos-redes img {
+  width: 45px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  fill: white;
+}
+
+.cp {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  margin-bottom: 0;
+  text-align: center;
+  font-size: small;
+}
