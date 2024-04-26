@@ -4,6 +4,12 @@ Link online: https://eduardokq.github.io/tallerrayomakween
 
 Por hacer:
 
+para la entrega 2
+- crear formuario "trabaja con nosotros"
+- validar el formulario con JavaScript. Usar JQuery.
+- Crear 2 funciones en JavaScript en algun lugar de la pagina
+- API
+
 seguir mejorando el landing page
 - mejorar css de seccion visitanos y mapa
 - mejorar css del formulario de contacto
@@ -11,8 +17,8 @@ seguir mejorando el landing page
 
 crear seccion "trabaja con nosotros"
 - crear html y css de la seccion
-- anexarlo en el navbar en todo el sitio web
-- escribir validaciones del formulario usando JavaScript
+- anexarlo al sitio web
+- escribir validaciones del formulario usando JavaScript (JQUERY)
 
 
 General
