@@ -26,6 +26,7 @@ General
 - Agregar scripts JS para dar funcionalidad al sitio
 - Agregar mas contenido del taller al sitio (imagenes, datos, productos, servicios, etc)
 - hola
+- hola2
 
 
 link al diseño del logo:
