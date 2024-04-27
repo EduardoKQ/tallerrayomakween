@@ -25,7 +25,7 @@ General
 - Seguir agregando CSS a mas secciones!
 - Agregar scripts JS para dar funcionalidad al sitio
 - Agregar mas contenido del taller al sitio (imagenes, datos, productos, servicios, etc)
-
+- hola
 
 
 link al diseño del logo:
