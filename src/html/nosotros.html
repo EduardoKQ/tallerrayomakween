@@ -156,14 +156,12 @@
     <!-- trabaja con nosotros -->
     <div>
       <div class="container">
-        <div
-          class="row justify-content-center align-items-center g-2"
-        >
+        <div class="row justify-content-center align-items-center g-2">
           <div class="col/12">
             <h1>Quieres trabajar con nosotros?</h1>
           </div>
         </div>
-        
+
         <div class="row justify-content-center align-items-baseline g-2">
           <div class="col-12 col-sm-6">
 
@@ -191,13 +189,15 @@
 
               <div class="mb-3">
                 <label for="apellidoPaternoInput" class="form-label">Apellido Paterno</label>
-                <input type="text" class="form-control" id="apellidoPaternoInput" aria-describedby="apellidoPaternoHelp">
+                <input type="text" class="form-control" id="apellidoPaternoInput"
+                  aria-describedby="apellidoPaternoHelp">
                 <div id="apellidoPaternoHelp" class="form-text">ayuda</div>
               </div>
 
               <div class="mb-3">
                 <label for="apellidoMaternoInput" class="form-label">Apellido Materno</label>
-                <input type="text" class="form-control" id="apellidoMaternoInput" aria-describedby="apellidoMaternoHelp">
+                <input type="text" class="form-control" id="apellidoMaternoInput"
+                  aria-describedby="apellidoMaternoHelp">
                 <div id="apellidoMaternoHelp" class="form-text">ayuda</div>
               </div>
 
@@ -255,84 +255,118 @@
     console.log(re.test("Asdfsdf"))
 
     // funciones de estilo CSS
-    function setCampoValido(id){
+    function setCampoValido(id) {
       $(id).addClass("is-valid");
       $(id).removeClass("is-invalid");
     }
 
-    function setCampoInvalido(id){
+    function setCampoInvalido(id) {
       $(id).addClass("is-invalid");
       $(id).removeClass("is-valid");
     }
 
-    function setCampoNeutro(id){
+    function setCampoNeutro(id) {
       $(id).removeClass("is-valid");
       $(id).removeClass("is-invalid");
     }
 
-    function resetCSSInputs(){
+    function resetCSSInputs() {
       $("input").removeClass("es-campo-valido es-campo-invalido");
     }
 
     // funciones validadoras
-
-    // a. Rut: largo entre 9 y 10 caracteres.
-    function validarRut(){
+    function validar(id, regex) {
       let esValido = false;
-      const re = /[0-9]{7,9}-([0-9]|k|K)/;
+      const re = regex;
 
-      let rut = $("#rutInput").val();
-      esValido = re.test(rut);
+      let val = $(id).val();
+      esValido = re.test(val);
 
       //cambiamos el estilo CSS segun corresponda
       if (esValido) {
-        setCampoValido("#rutInput");
+        setCampoValido(id);
       }
-      else{
-        setCampoInvalido("#rutInput");
+      else {
+        setCampoInvalido(id);
       }
 
       return esValido;
     }
-    //!!!
+
+    // a. Rut: largo entre 9 y 10 caracteres.
+    function validarRut() {
+      const re = /[0-9]{7,9}-([0-9]|k|K)/;
+      let id = "#rutInput";
+      return validar(id, re);
+    }
+    // ! el regex acepta numeros 
     // b. Nombre: largo entre 3 y 20 caracteres.
-    function validarNombre(){
-      return true;
+    function validarNombre() {
+      const re = /[^0-9]{3,20}/;
+      let id = "#nombreInput";
+      return validar(id, re);
     }
-    //!!!
+
+    //! el regex acepta numeros 
     // c. Apellido paterno: largo entre 3 y 20 caracteres.
-    function validarApPaterno(){
-      return true;
+    function validarApPaterno() {
+      const re = /[^0-9]{3,20}/;
+      let id = "#apellidoPaternoInput";
+      return validar(id, re);
     }
-    //!!!
+
+    //! el regex acepta numeros 
     // d. Apellido materno: largo entre 3 y 20 caracteres.
-    function validarApMaterno(){
-      return true;
+    function validarApMaterno() {
+      const re = /[^0-9]{3,20}/;
+      let id = "#apellidoMaternoInput";
+      return validar(id, re);
     }
-    //!!!
+
     // e. Edad: entre 18 y 35 años.
-    function validarEdad(){
-      return true;
+    function validarEdad() {
+      const re = /((1[8-9])|(2[0-9])|(3[0-5]))$/;
+      let id = "#edadInput";
+      return validar(id, re);
     }
-    //!!!
+
     // f. Género: que sea seleccionado un género de la lista.
-    function validarGenero(){
-      return true;
+    function validarGenero() {
+      const re = /([1-9])$/;
+      let id = "#generoInput";
+      return validar(id, re);
     }
-    //!!!
-    // g. Celular: largo entre 9 y 12. 
-    function validarCelular(){
-      return true;
+
+    // g. Celular: largo 8
+    // +56 9 XXXX XXXX 
+    function validarCelular() {
+      const re = /[1-9]{8}$/;
+      let id = "#celularInput";
+      return validar(id, re);
     }
-    //!!!
+
     // formato email xxx@xxx.xxx
-    function validarEmail(){
-      return true;
+    function validarEmail() {
+      const re = /.+@.+\..+/;
+      let id = "#emailInput";
+      return validar(id, re);
     }
-    //!!!
+
     // que sea no vacio
-    function validarMensaje(){
-      return true;
+    function validarMensaje() {
+      let esValido = false;
+      let mensaje = $("#textAreaInput").val();
+      let n = mensaje.trim().length;
+      if (n > 0) {
+        esValido = true;
+      }
+      if (esValido) {
+        setCampoValido("#textAreaInput");
+      }
+      else {
+        setCampoInvalido("#textAreaInput");
+      }
+      return esValido;
     }
 
     $(document).ready(function () {
@@ -361,21 +395,21 @@
         //validar mensaje
         let esMensajeValido = validarMensaje();
 
-        esFormularioValido = 
-                  esRutValido && 
-                  esNombreValido && 
-                  esApPaternoValido &&
-                  esApMaternoValido && 
-                  esEdadValido && 
-                  esGeneroValido && 
-                  esCelularValido && 
-                  esEmailValido && 
-                  esMensajeValido;
-        
+        esFormularioValido =
+          esRutValido &&
+          esNombreValido &&
+          esApPaternoValido &&
+          esApMaternoValido &&
+          esEdadValido &&
+          esGeneroValido &&
+          esCelularValido &&
+          esEmailValido &&
+          esMensajeValido;
+
         if (esFormularioValido) {
-          console.log("formulario valido!"); 
+          console.log("formulario valido!");
         }
-        else{
+        else {
           console.log("algo esta invalido");
         }
       });
