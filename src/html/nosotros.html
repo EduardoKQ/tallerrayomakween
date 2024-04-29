@@ -178,33 +178,43 @@
               <div class="mb-3">
                 <label for="rutInput" class="form-label">Rut</label>
                 <input type="text" class="form-control" id="rutInput" aria-describedby="rutHelp">
-                <div id="rutHelp" class="form-text">ayuda</div>
+                <div class="invalid-feedback">
+                  ingrese un rut valido. Ejemplo: 12345678-9
+                </div>
               </div>
 
               <div class="mb-3">
                 <label for="nombreInput" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombreInput" aria-describedby="nombreHelp">
-                <div id="nombreHelp" class="form-text">ayuda</div>
+                <div class="invalid-feedback">
+                  ingrese un nombre valido. Entre 3 a 20 caracteres
+                </div>
               </div>
 
               <div class="mb-3">
                 <label for="apellidoPaternoInput" class="form-label">Apellido Paterno</label>
                 <input type="text" class="form-control" id="apellidoPaternoInput"
                   aria-describedby="apellidoPaternoHelp">
-                <div id="apellidoPaternoHelp" class="form-text">ayuda</div>
+                  <div class="invalid-feedback">
+                    ingrese un apellido valido. Entre 3 a 20 caracteres
+                  </div>
               </div>
 
               <div class="mb-3">
                 <label for="apellidoMaternoInput" class="form-label">Apellido Materno</label>
                 <input type="text" class="form-control" id="apellidoMaternoInput"
                   aria-describedby="apellidoMaternoHelp">
-                <div id="apellidoMaternoHelp" class="form-text">ayuda</div>
-              </div>
+                  <div class="invalid-feedback">
+                    ingrese un apellido valido. Entre 3 a 20 caracteres
+                  </div>
+                </div>
 
               <div class="mb-3">
                 <label for="edadInput" class="form-label">Edad</label>
                 <input type="number" class="form-control" id="edadInput" aria-describedby="edadHelp">
-                <div id="edadHelp" class="form-text">ayuda</div>
+                <div class="invalid-feedback">
+                  ingrese una edad valida. Entre 18 a 35 annos
+                </div>
               </div>
 
               <div class="mb-3">
@@ -215,23 +225,33 @@
                   <option value="2">Mujer</option>
                   <option value="3">Otro</option>
                 </select>
+                <div class="invalid-feedback">
+                  seleccione una opcion
+                </div>
               </div>
 
               <div class="mb-3">
                 <label for="celularInput" class="form-label">Celular</label>
                 <input type="number" class="form-control" id="celularInput" aria-describedby="edadHelp">
-                <div id="edadHelp" class="form-text">ayuda</div>
+                <div class="invalid-feedback">
+                  ingrese 8 numeros para completar su celular
+                </div>
               </div>
 
               <div class="mb-3">
                 <label for="emailInput" class="form-label">Email</label>
                 <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">ayuda</div>
+                <div class="invalid-feedback">
+                  ingrese un formato valido. xxx@xxx.xxx
+                </div>
               </div>
 
               <div class="form-group">
                 <label for="textAreaInput">Escribe sobre tu experiencia</label>
                 <textarea class="form-control" id="textAreaInput" rows="3"></textarea>
+                <div class="invalid-feedback">
+                  debe ingresar un mensaje
+                </div>
               </div>
 
               <button type="button" class="btn btn-primary">Enviar</button>
