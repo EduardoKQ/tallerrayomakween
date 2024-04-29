@@ -175,15 +175,6 @@
             </ul>
 
           </div>
-
-          <!-- 
-          a. Rut: largo entre 9 y 10 caracteres.
-          b. Nombre: largo entre 3 y 20 caracteres.
-          c. Apellido paterno: largo entre 3 y 20 caracteres.
-          d. Apellido materno: largo entre 3 y 20 caracteres.
-          e. Edad: entre 18 y 35 años.
-          f. Género: que sea seleccionado un género de la lista.
-          g. Celular: largo entre 9 y 12. -->
           <div class="col-12 col-sm-6">
             <form class="form-trabaja-con-nosotros" autocomplete="off">
               <div class="mb-3">
@@ -284,6 +275,8 @@
     }
 
     // funciones validadoras
+
+    // a. Rut: largo entre 9 y 10 caracteres.
     function validarRut(){
       let esValido = false;
       const re = /[0-9]{7,9}-([0-9]|k|K)/;
@@ -302,34 +295,42 @@
       return esValido;
     }
     //!!!
+    // b. Nombre: largo entre 3 y 20 caracteres.
     function validarNombre(){
       return true;
     }
     //!!!
+    // c. Apellido paterno: largo entre 3 y 20 caracteres.
     function validarApPaterno(){
       return true;
     }
     //!!!
+    // d. Apellido materno: largo entre 3 y 20 caracteres.
     function validarApMaterno(){
       return true;
     }
     //!!!
+    // e. Edad: entre 18 y 35 años.
     function validarEdad(){
       return true;
     }
     //!!!
+    // f. Género: que sea seleccionado un género de la lista.
     function validarGenero(){
       return true;
     }
     //!!!
+    // g. Celular: largo entre 9 y 12. 
     function validarCelular(){
       return true;
     }
     //!!!
+    // formato email xxx@xxx.xxx
     function validarEmail(){
       return true;
     }
     //!!!
+    // que sea no vacio
     function validarMensaje(){
       return true;
     }
