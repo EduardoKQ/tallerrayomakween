@@ -16,6 +16,27 @@
   height: 10px;
 }
 
+.r-elements img {
+  width: 40px;
+  color: black;
+}
+
+#contadorCarrito {
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  right: 12px;
+  text-align: center;
+  font-weight: bolder;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  color: #ed4e4a;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
 /* Navbar */
 .logo-marca-auto {
   width: 55px;
@@ -53,13 +74,10 @@ h1 {
   width: 2em;
 }
 
-
-
 .inicio-sesion {
   border: 1px solid grey;
   border-radius: 25px;
 }
-
 
 /* trabajos.html */
 
@@ -89,6 +107,6 @@ h1 {
 
 /* contacto.html */
 .contacto-detalle svg {
-    max-width: 30px;
-    margin-right: 5px;
+  max-width: 30px;
+  margin-right: 5px;
 }
