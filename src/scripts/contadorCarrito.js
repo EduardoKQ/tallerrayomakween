@@ -1,6 +1,7 @@
 $(document).ready(function () {
+  actualizarContador();
   // para probar borramos la data persistente
-  sessionStorage.removeItem("numProductos");
+  //   sessionStorage.removeItem("numProductos");
 });
 
 $(".btn-agregar-producto").click(function () {
@@ -22,6 +23,10 @@ function agregarProducto() {
 
 function actualizarContador() {
   let numProductos = sessionStorage.getItem("numProductos");
+
+  if (numProductos == null) {
+    numProductos = 0;
+  }
 
   $("#contadorCarrito").text(numProductos);
 
