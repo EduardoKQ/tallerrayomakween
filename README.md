@@ -2,32 +2,29 @@
 
 Link online: https://eduardokq.github.io/tallerrayomakween
 
-Por hacer:
+## Para la entrega 2
+- [x] crear formuario "trabaja con nosotros"
+- [x] validar el formulario con JavaScript. Usar JQuery.
+- [x] Crear 2 funciones en JavaScript en algun lugar de la pagina (agreguemos mas!)
+    - boton de scroll up en landing page
+    - contador de carrito persistente al agregar productos
+- [ ] API
 
-para la entrega 2
-- crear formuario "trabaja con nosotros"
-- validar el formulario con JavaScript. Usar JQuery.
-- Crear 2 funciones en JavaScript en algun lugar de la pagina
-- API
+## Por hacer
 
-seguir mejorando el landing page
-- mejorar css de seccion visitanos y mapa
-- mejorar css del formulario de contacto
-- revisar y ajustar errores menores de diseño
+### falta mas CSS
+- agregar mas y mejor CSS en todas las paginas!
+- mejorar CSS en seccion productos y trabajos
+- terminar el CSS del landing page para el formulario de contacto
+- pequños ajustes de diseño, color, tamaño, etc
 
-crear seccion "trabaja con nosotros"
-- crear html y css de la seccion
-- anexarlo al sitio web
-- escribir validaciones del formulario usando JavaScript (JQUERY)
+### faltan funcionalidades (javascript)
+- validacion con JQuery del formulario de contacto
+- boton del carrito de compras funcional
+    - que se ven los productos seleccionados
+    - que permita agregar mas o eliminar productos desde el popover
 
-
-General
-- Seguir agregando CSS a mas secciones!
-- Agregar scripts JS para dar funcionalidad al sitio
-- Agregar mas contenido del taller al sitio (imagenes, datos, productos, servicios, etc)
-- hola
-- hola2
-
-
-link al diseño del logo:
+## Referencias
+nuestro logo:
 https://www.canva.com/design/DAGDVoCPxzo/sguPmnD5XT08hToOkvUaaw/edit?utm_content=DAGDVoCPxzo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
