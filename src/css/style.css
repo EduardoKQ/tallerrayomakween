@@ -43,14 +43,20 @@
 
 /* Estilo para el contador del carrito */
 #contadorCarrito {
+  display: none;
   position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: red;
-  color: white;
+  right: 12px;
+  top: 29px;
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
+  width: 26px;
+  height: 23px;
+  padding: 0;
+  color: #ed4e4a;
+  background-color: white;
+  border: 2px solid black;
   border-radius: 50%;
-  padding: 5px;
-  font-size: 0.75rem;
 }
 
 
@@ -63,22 +69,6 @@
 .r-elements img {
   width: 40px;
   color: black;
-}
-
-#contadorCarrito {
-  display: none;
-  position: absolute;
-  bottom: 6px;
-  right: 12px;
-  text-align: center;
-  font-weight: bolder;
-  width: 26px;
-  height: 26px;
-  padding: 0;
-  color: #ed4e4a;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 50%;
 }
 
 /* Navbar */
