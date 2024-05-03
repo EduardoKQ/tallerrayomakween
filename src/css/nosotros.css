@@ -1,0 +1,16 @@
+.producto-card .card {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 5px 10px 3px #ccc;
+    border-radius: 20px;
+}
+
+.btn-primary .btn-agregar-producto {
+    opacity: .80;
+    margin: auto;
+}
+
+.card-img-top {
+    width: auto;
+    height: auto;
+}
