@@ -14,3 +14,9 @@
     width: auto;
     height: auto;
 }
+
+.card-body {
+    width: 200px;
+    height: 150px;
+}
+
