@@ -132,63 +132,6 @@
     margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-  background-color: brown;
-  color: white;
-}
-
-.logo-footer img {
-    width: 300px;
-    padding-bottom: 3px;
-}
-.datos-contacto {
-  font-size: small;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.datos-contacto p {
-  margin-bottom: 0;
-}
-
-.footer-redes {
-  display: flex;
-}
-
-.logos-redes {
-  width: 100%;
-  text-align: center;
-}
-
-.logos-redes img {
-  width: 45px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 0px;
-  fill: white;
-}
-
-.cp {
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 0;
-  text-align: center;
-  font-size: small;
-}
-
-.click-qr{
-    fill: none;
-    color: white;
-    font-weight: bold;
-}
-
-.codigoqr {
-    width: 100%;
-    height: auto;
-    user-select: none;
-}
-
 /* boton scroll up */
 #scrollBtn {
   display: none; /* Hidden by default */
