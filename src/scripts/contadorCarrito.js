@@ -7,6 +7,7 @@ $(document).ready(function () {
 $(".btn-agregar-producto").click(function () {
   agregarProducto();
   actualizarContador();
+  animarContador();
 });
 
 function agregarProducto() {
@@ -35,4 +36,10 @@ function actualizarContador() {
   } else {
     $("#contadorCarrito").css("display", "block");
   }
+}
+
+function animarContador() {
+  let contador = $("#contadorCarrito");
+  contador.animate({top:"22px"}, 150);
+  contador.animate({top:"25px"}, 100);
 }
