@@ -12,12 +12,11 @@
 
 /* Estilo para la barra de navegación */
 .navbar {
-  background-color: #ffffff;
-  transition: background-color 0.5s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .navbar:hover {
-  background-color: #ffd900;
+  box-shadow: 0px 2px 5px #ffd900;
 }
 
 /* Estilo para los enlaces de navegación */
@@ -32,8 +31,8 @@
 
 /* Estilo para los elementos a la derecha */
 .r-elements img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.5s ease;
 }
 
@@ -73,17 +72,15 @@
 
 /* Navbar */
 .logo-marca-auto {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
 }
 
 .navbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.215);
   box-shadow: 0px 2px 5px #862922a8;
 }
-.navbar-brand img {
-  max-width: 120px;
-}
+
 .logo-header {
   width: auto;
   height: auto;
@@ -100,7 +97,7 @@ h1 {
 
 .navbar-brand img {
   width: 100%;
-  max-width: 80px;
+  max-width: 90px;
 }
 
 .nav-link svg {
@@ -125,9 +122,11 @@ h1 {
   color: blue;
   text-wrap: wrap;
 }
+
 .trabajo-header svg {
   max-width: 30px;
 }
+
 .trabajo-header img {
   max-width: 100%;
   margin: auto;
@@ -152,15 +151,17 @@ footer {
 }
 
 .logo-footer img {
-    width: 300px;
-    padding-bottom: 3px;
+  width: 300px;
+  padding-bottom: 3px;
 }
+
 .datos-contacto {
   font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .datos-contacto p {
   margin-bottom: 0;
 }
@@ -190,14 +191,14 @@ footer {
   font-size: small;
 }
 
-.click-qr{
-    fill: none;
-    color: white;
-    font-weight: bold;
+.click-qr {
+  fill: none;
+  color: white;
+  font-weight: bold;
 }
 
 .codigoqr {
-    width: 100%;
-    height: auto;
-    user-select: none;
+  width: 100%;
+  height: auto;
+  user-select: none;
 }
