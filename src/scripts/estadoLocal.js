@@ -73,6 +73,18 @@ function setApertura(dateTime) {
         return false;
     }
 
+    function actualizarIcono(esAbierto){
+        $(".icono-apertura").css("display", "flex");
+        if(esAbierto){
+            $(".icono-apertura").text("Abierto");
+            $(".icono-apertura").addClass("abierto");
+        }
+        else{
+            $(".icono-apertura").text("Cerrado");
+            $(".icono-apertura").addClass("cerrado");
+        }
+    }
+
     // aasignamos mensajes sobre horarios y estado de apertura segun la fecha
     let mensajeAtencion = "";
     let mensajeApertura = "";
@@ -102,6 +114,9 @@ function setApertura(dateTime) {
     // escribimos mensajes en el HTML
     $(".mensaje-atencion").text(mensajeAtencion);
     $(".mensaje-apertura").text(mensajeApertura);
+
+    // actualizamos icono de estado de apertura del taller
+    actualizarIcono(estaAbierto);
 }
 
 // API hora global

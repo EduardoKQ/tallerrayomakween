@@ -4,62 +4,63 @@
 
 
 /* Carrusel */
-.container-carrusel{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: grey;
+.container-carrusel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
 }
 
-.container-carrusel .container{
-    margin: 0;
+.container-carrusel .container {
+  margin: 0;
 }
 
-.carousel-inner{
-    max-width: 100%;
-    max-height: 100%;
-    width: 90%;
-    height: auto;
+.carousel-inner {
+  max-width: 100%;
+  max-height: 100%;
+  width: 90%;
+  height: auto;
 }
 
-.carousel-item img{
-    max-height:100%; 
-    max-width:100%;
-    aspect-ratio: 4/3;
-    object-fit: fill;
+.carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: fill;
 }
 
-.carousel-caption{
-    padding: 3px 0px;
+.carousel-caption {
+  padding: 3px 0px;
 }
 
-.carousel-caption .job-title{
-    width: 100%;
-    padding: 1px 0px;
-    text-align: center;
-    text-justify: auto;
-    background-color: rgba(0, 0, 0, 0.696);
-    border-radius: 10px;
+.carousel-caption .job-title {
+  width: 100%;
+  padding: 1px 0px;
+  text-align: center;
+  text-justify: auto;
+  background-color: rgba(0, 0, 0, 0.696);
+  border-radius: 10px;
 }
 
-.carousel-indicators{
-    background-color: rgba(0, 0, 0, 0.696);
-    width: 50%;
-    border-radius: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.696);
+  width: 50%;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
-.carousel-indicators button{
-    border-radius: 50%;
-    border: 0px !important;
-    width: 10px !important;
-    height: 10px !important;
+.carousel-indicators button {
+  border-radius: 50%;
+  border: 0px !important;
+  width: 10px !important;
+  height: 10px !important;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
-    width: 3rem !important;
-    height: 3rem !important; 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem !important;
+  height: 3rem !important;
 }
 
 /* Marcas autos */
@@ -95,62 +96,131 @@
 }
 
 .caja-marca img {
-    width: 10vh;
-    height: 100%;
-    transition: filter 0.3s, opacity 0.3s;
-  }
+  width: 10vh;
+  height: 100%;
+  transition: filter 0.3s, opacity 0.3s;
+}
 
 .caja-marca:hover img {
-    filter: blur(8px);
-    opacity: 0.6;
-  }
+  filter: blur(8px);
+  opacity: 0.6;
+}
 
 /* Servicios */
-.servicio-card{
-    width: 100%;
-    border-radius: 0px !important;
+.servicio-card {
+  width: 100%;
+  border-radius: 0px !important;
 }
 
-.servicio-card .card-body{
-    padding: 8px;
+.servicio-card .card-body {
+  padding: 8px;
 }
 
-.servicio-card .card-title{
-    margin: 0;
+.servicio-card .card-title {
+  margin: 0;
 }
 
-.servicio-card img{
-    width: 100%;
-    border-radius: 0px !important;
+.servicio-card img {
+  width: 100%;
+  border-radius: 0px !important;
 }
 
-.servicio-card hr{
-    width: 60%;
-    border: 3px solid #ed4e4a;
-    opacity: 1;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.servicio-card hr {
+  width: 60%;
+  border: 3px solid #ed4e4a;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* visitanos */
+.estado-taller {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reloj {
+  margin-bottom: 10px;
+  background-color: rgba(230, 230, 230, 0.747);
+  width: 70%;
+  font-weight: bold;
+}
+
+.reloj p {
+  padding: 0;
+  margin: 0;
+}
+
+.div-apertura {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.div-apertura p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.icono-apertura {
+  display: none;
+  font-size: 1em;
+  font-weight: bolder;
+  color: white;
+  background-color: green;
+  width: 75px;
+  height: 75px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.abierto {
+  background-color: green;
+}
+
+.cerrado {
+  background-color: red;
 }
 
 /* boton scroll up */
 #scrollBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
 
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #scrollBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
+  /* Add a dark-grey background on hover */
 }
-
