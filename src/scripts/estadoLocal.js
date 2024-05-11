@@ -21,13 +21,16 @@ const horaCierreSemana = "18:00";
 const horaAperturaSabado = "09:00";
 const horaCierreSabado = "14:00";
 
+// funcion del reloj
 function actualizarHora() {
+    // obtenemos fecha actual del sistema
     let hora, minutos, segundos;
     let dateTime = new Date();
     hora = dateTime.getHours();
     minutos = dateTime.getMinutes();
     segundos = dateTime.getSeconds();
 
+    // arreglamos el formato de 1 digito a 2 para mantener consistencia
     if (segundos < 10) {
         segundos = "0" + segundos;
     }
@@ -35,6 +38,7 @@ function actualizarHora() {
         minutos = "0" + minutos;
     }
 
+    // de formato 24hrs a 12hrs AM y PM
     if (hora > 12) {
         horaActual = hora % 12 + ":" + minutos + " PM";
     }
@@ -45,8 +49,11 @@ function actualizarHora() {
     $(".hora-actual").text(horaActual);
 }
 
+// funcion de calculo del estado de apertura del taller
 function setApertura(dateTime) {
 
+    // true si dateTime esta entre las fechas de apertura y cierre
+    // false en otro caso
     function fechaEntre(fechaApertura, fechaCierre) {
         let fechaActual = dateTime;
 
@@ -66,6 +73,7 @@ function setApertura(dateTime) {
         return false;
     }
 
+    // aasignamos mensajes sobre horarios y estado de apertura segun la fecha
     let mensajeAtencion = "";
     let mensajeApertura = "";
     let estaAbierto = false;
@@ -90,6 +98,8 @@ function setApertura(dateTime) {
     } else {
         mensajeApertura = mensajeCerrado;
     }
+    
+    // escribimos mensajes en el HTML
     $(".mensaje-atencion").text(mensajeAtencion);
     $(".mensaje-apertura").text(mensajeApertura);
 }
@@ -102,13 +112,14 @@ $(document).ready(function () {
         type: "get",
         url: urlZonaHoraria,
         success: function (response) {
+            // obtenemos la hora de Chile y la procesamos
             let dateTime = new Date(response.datetime);
             setApertura(dateTime);
         }
     });
 });
 
-// Contador de la hora
+// Reloj
 $(document).ready(function () {
     setInterval(() => {
         actualizarHora();
