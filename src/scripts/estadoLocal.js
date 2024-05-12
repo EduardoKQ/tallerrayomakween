@@ -121,7 +121,7 @@ function setApertura(dateTime) {
 
 // API hora global
 $(document).ready(function () {
-    urlZonaHoraria = "http://worldtimeapi.org/api/timezone/America/Santiago";
+    urlZonaHoraria = "https://worldtimeapi.org/api/timezone/America/Santiago";
     console.log("test");
     $.ajax({
         type: "get",
