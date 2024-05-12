@@ -189,6 +189,31 @@
   background-color: red;
 }
 
+/* forms */
+form{
+  /* background-color: gray; */
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input{
+  border: none !important;
+  border-bottom: var(--bs-border-width) solid var(--bs-border-color) !important;
+  border-radius: 0% !important;
+}
+
+.text-box{
+  width: 100%;
+}
+
+form button{
+  width: 80%;
+}
+
 /* boton scroll up */
 #scrollBtn {
   display: none;
