@@ -8,7 +8,16 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: grey;
+  background-color: rgba(223, 223, 223, 0.884);
+  max-height: 100vh;
+}
+
+.container-carrusel .c-container{
+  max-height: 100%;
+}
+
+.container-carrusel .row{
+  max-height: 100%;
 }
 
 .container-carrusel .container {
@@ -108,7 +117,7 @@
 
 /* Servicios */
 .servicio-card {
-  width: 100%;
+  width: 95%;
   border-radius: 0px !important;
 }
 
@@ -208,6 +217,7 @@ form input{
 
 .text-box{
   width: 100%;
+  max-width: 600px;
 }
 
 form button{
