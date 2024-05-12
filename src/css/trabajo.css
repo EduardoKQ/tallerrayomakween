@@ -7,12 +7,16 @@
 
 
 .card-text {
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 20px;
+    
 }
 
 
 .h1 {
     text-align: center;
     color: red;
+    
 }
+
+
