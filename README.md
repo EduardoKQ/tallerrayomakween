@@ -25,7 +25,6 @@ Link online: https://eduardokq.github.io/tallerrayomakween
 - pequños ajustes de diseño, color, tamaño, etc
 
 ### faltan funcionalidades (javascript)
-- validacion con JQuery del formulario de contacto
 - popover del carrito de compras funcional
     - que se vean los productos seleccionados
     - que permita agregar mas o eliminar productos desde el popover
