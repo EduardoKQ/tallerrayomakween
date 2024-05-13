@@ -39,7 +39,13 @@ function actualizarHora() {
     }
 
     // de formato 24hrs a 12hrs AM y PM
-    if (hora > 12) {
+    if (hora = 0) {
+        horaActual = "12" + ":" + minutos + " AM";
+    }
+    if (hora = 12) {
+        horaActual = hora + ":" + minutos + " PM";
+    }
+    else if (hora > 12) {
         horaActual = hora % 12 + ":" + minutos + " PM";
     }
     else {
@@ -130,6 +136,7 @@ $(document).ready(function () {
             // obtenemos la hora de Chile y la procesamos
             let dateTime = new Date(response.datetime);
             // dateTime.setDate(11)
+            // console.log(response);
             setApertura(dateTime);
         }
     });
