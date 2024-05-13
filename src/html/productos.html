@@ -17,7 +17,7 @@
     <div class="container-fluid justify-content-between">
       <!-- left elements -->
       <a class="navbar-brand" href="landing.html">
-        <img class="logo-header" src="../../imagenes/logos empresa/logo-normal.svg" width="30" height="30"
+        <img class="logo-header" src="../../imagenes/logos empresa/logo-auto-negro.svg" width="30" height="30"
           alt="logo empresa" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -45,16 +45,17 @@
         <!-- usuario -->
         <a class="nav-link mx-2" href="session.html">
           <img src="../../imagenes/logo-usuario.svg" alt="">
-          </a>
+        </a>
         <!-- carrito compra -->
         <a class="nav-link mx-2" href="#" data-bs-toggle="popover" data-bs-title="Carrito"
           data-bs-content="Por implementar! Aca iria la informacion del carrito y un boton para confirmar compra">
-          <img src="../../imagenes/logo-shopping-cart.svg" alt="">  
+          <img src="../../imagenes/logo-shopping-cart.svg" alt="">
           <div id="contadorCarrito">1</div>
         </a>
       </div>
     </div>
   </nav>
+
   <main>
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center g-2">
@@ -194,9 +195,10 @@
   <script src="../scripts/jquery-3.2.1.min.js"></script>
   <script src="../scripts/contadorCarrito.js"></script>
 
-  <script>
-    $("#navbarinit").load("navbar.html");
-  </script>
+    <!-- nav collapse al apretar en la pagina -->
+    <script src="../scripts/navCollapse.js"></script>
+    <!-- contador del carrito -->
+    <script src="../scripts/contadorCarrito.js"></script>
 </body>
 
 </html>
