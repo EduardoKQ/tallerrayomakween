@@ -5,7 +5,7 @@ const diaSemana = {
     4: "Jueves",
     5: "Viernes",
     6: "Sabado",
-    7: "Domingo"
+    0: "Domingo"
 }
 
 const horarioLaboral = {
@@ -91,7 +91,7 @@ function setApertura(dateTime) {
     let estaAbierto = false;
 
     switch (dateTime.getDay()) {
-        case 7: //domingo
+        case 0: //domingo
             mensajeAtencion = "Hoy es Domingo. Solo atendemos de Lunes a Sabado."
             estaAbierto = false;
             break;
@@ -129,6 +129,7 @@ $(document).ready(function () {
         success: function (response) {
             // obtenemos la hora de Chile y la procesamos
             let dateTime = new Date(response.datetime);
+            // dateTime.setDate(11)
             setApertura(dateTime);
         }
     });
