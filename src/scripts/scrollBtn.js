@@ -9,6 +9,11 @@ function showScrollButton() {
   }
 }
 
+function disableScrolling(){
+  $("body").addClass("stop-scrolling");
+
+}
+
 function goTop() {
   window.scroll(0, 0, "auto");
 }

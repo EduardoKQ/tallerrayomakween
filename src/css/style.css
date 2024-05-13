@@ -209,3 +209,8 @@ footer {
   height: auto;
   user-select: none;
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
