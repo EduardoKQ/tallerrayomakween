@@ -209,18 +209,3 @@ footer {
   height: auto;
   user-select: none;
 }
-
-/* forms */
-form{
-  /* background-color: gray; */
-  padding: 0px 12px;
-  padding-bottom: 10px;
-  width: 100%;
-
-}
-
-input{
-  border: none !important;
-  border-bottom: var(--bs-border-width) solid var(--bs-border-color) !important;
-  border-radius: 0% !important;
-}
