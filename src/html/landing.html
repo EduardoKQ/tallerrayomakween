@@ -355,7 +355,7 @@
 
         <div class="row justify-content-center align-items-center g-2">
           <div class="col">
-            <form class="form-validation" novalidate>
+            <form class="needs-validation">
               <div class="row">
                 <div class="form-group col-md-4">
                   <label for="inputNombreContacto">Nombre</label>
@@ -369,9 +369,12 @@
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputFonoContacto">Fono</label>
-                  <input type="tel" class="form-control" id="inputFonoContacto" placeholder="+569..." required />
-                  <div class="invalid-feedback">
-                    Ingrese un numero de telefono valido
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">+569 </span>
+                    <input type="tel" class="form-control" id="inputFonoContacto" placeholder="..." required />
+                    <div class="invalid-feedback">
+                      Ingrese un numero de telefono valido
+                    </div>
                   </div>
                 </div>
               </div>
@@ -463,39 +466,8 @@
   <script src="../scripts/scrollBtn.js"></script>
   <!-- nav collapse al apretar en la pagina -->
   <script src="../scripts/navCollapse.js"></script>
-
-  <!-- script de validaciones -->
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      "use strict";
-      window.addEventListener(
-        "load",
-        function () {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName("form-validation");
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(
-            forms,
-            function (form) {
-              form.addEventListener(
-                "submit",
-                function (event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add("was-validated");
-                },
-                false
-              );
-            }
-          );
-        },
-        false
-      );
-    })();
-  </script>
+  <!-- validacion del formulario -->
+  <script src="../scripts/validacionFormDudas.js"></script>
 
   <!-- init de popover -->
   <script>

@@ -224,6 +224,13 @@ form button{
   width: 80%;
 }
 
+.input-group span{
+  border: none;
+  border-bottom: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: 0px;
+  color: rgb(58, 58, 58);
+}
+
 /* boton scroll up */
 #scrollBtn {
   display: none;
