@@ -89,7 +89,7 @@
           </div>
 
           <div class="row justify-content-center align-items-center mx-auto">
-            <div class="col">
+            <div class="col-12 col-md-6">
               <p>
                 "En Taller Rayo Makween, somos un equipo apasionado de
                 profesionales dedicados a brindar servicios mecánicos confiables
@@ -98,8 +98,8 @@
                 comunidad".
               </p>
             </div>
-            <div class="col">
-              <img
+            <div class="col-12 col-md-6 justify-content-center d-flex">
+              <img class="imagen-taller"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpZNQNdm98jpkdYfqCEG9ejOhbXA33GECkA&usqp=CAU"
                 alt=""
               />
@@ -117,8 +117,8 @@
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center g-2">
-            <div class="col">
+          <div class="row justify-content-center align-items-center mx-auto">
+            <div class="col justify-content-center d-flex">
               <div class="card" style="width: 18rem">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRK-gRXcdAl-xh1VOChv1ZTcE-opq2gq9BXwKY_eX000Uke-zLMsP9KrRlvo4pATH05E&usqp=CAU"
@@ -132,7 +132,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col justify-content-center d-flex">
               <div class="card" style="width: 18rem">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRK-gRXcdAl-xh1VOChv1ZTcE-opq2gq9BXwKY_eX000Uke-zLMsP9KrRlvo4pATH05E&usqp=CAU"
@@ -148,7 +148,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col justify-content-center d-flex">
               <div class="card" style="width: 18rem">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRK-gRXcdAl-xh1VOChv1ZTcE-opq2gq9BXwKY_eX000Uke-zLMsP9KrRlvo4pATH05E&usqp=CAU"
@@ -162,7 +162,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col justify-content-center d-flex">
               <div class="card" style="width: 18rem">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRK-gRXcdAl-xh1VOChv1ZTcE-opq2gq9BXwKY_eX000Uke-zLMsP9KrRlvo4pATH05E&usqp=CAU"
@@ -183,7 +183,7 @@
       <div>
         <div class="container">
           <div class="row justify-content-center align-items-center g-2">
-            <div class="col/12">
+            <div class="col">
               <h1>Quieres trabajar con nosotros?</h1>
             </div>
           </div>
@@ -191,147 +191,157 @@
           <div class="row justify-content-center align-items-baseline g-2">
             <div class="col-12 col-sm-6">
               <h2>Estamos buscando</h2>
-              <h5>
+              <p class="mensaje-trabajo">
                 "En un taller mecánico, cada día es una oportunidad para
                 desafiar tus habilidades, superar obstáculos y dejar tu huella
                 en cada motor que reparas. Cada tornillo ajustado, cada pieza
                 reemplazada es un paso hacia la excelencia y la satisfacción de
                 un trabajo bien hecho. ¡Que este mensaje te inspire y motive a
                 dar lo mejor de ti en el taller mecánico cada día!
-              </h5>
+              </p>
 
               <ul>
-                <li>Mecanico 5+ experiencia</li>
-                <li>Especialista en motor 5+ experiencia</li>
-                <li>Ayudante 1+ experiencia</li>
+                <li>Mecanico 5+ años experiencia</li>
+                <li>Especialista en motor 5+ ños experiencia</li>
+                <li>Ayudante 1+ años experiencia</li>
               </ul>
             </div>
-            
+
             <div class="col-12 col-sm-6">
+
               <div class="container">
+                  <form class="form-trabaja-con-nosotros" autocomplete="off">
+                  <div class="row">
+
+                    <div class="mb-3 col-sm-6">
+                      <label for="rutInput" class="form-label">Rut</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="rutInput"
+                        aria-describedby="rutHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese un rut valido. Ejemplo: 12345678-9
+                      </div>
+                    </div>
+
+                    <div class="mb-3 col-sm-6">
+                      <label for="nombreInput" class="form-label">Nombre</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombreInput"
+                        aria-describedby="nombreHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese un nombre valido. Entre 3 a 20 caracteres
+                      </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-6">
+                      <label for="apellidoPaternoInput" class="form-label"
+                        >Apellido Paterno</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="apellidoPaternoInput"
+                        aria-describedby="apellidoPaternoHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese un apellido valido. Entre 3 a 20 caracteres
+                      </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-6">
+                      <label for="apellidoMaternoInput" class="form-label"
+                        >Apellido Materno</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="apellidoMaternoInput"
+                        aria-describedby="apellidoMaternoHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese un apellido valido. Entre 3 a 20 caracteres
+                      </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-6">
+                      <label for="edadInput" class="form-label">Edad</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="edadInput"
+                        aria-describedby="edadHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese una edad valida. Entre 18 a 35 annos
+                      </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-6">
+                      <label class="form-label" for="generoInput">Genero</label>
+                      <select class="form-select" id="generoInput">
+                        <option selected>Elegir...</option>
+                        <option value="1">Hombre</option>
+                        <option value="2">Mujer</option>
+                        <option value="3">Otro</option>
+                      </select>
+                      <div class="invalid-feedback">seleccione una opcion</div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="celularInput" class="form-label"
+                        >Celular</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="celularInput"
+                        aria-describedby="edadHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese 8 numeros para completar su celular
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="emailInput" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailInput"
+                        aria-describedby="emailHelp"
+                      />
+                      <div class="invalid-feedback">
+                        ingrese un formato valido. xxx@xxx.xxx
+                      </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                      <label for="textAreaInput"
+                        >Escribe sobre tu experiencia</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="textAreaInput"
+                        rows="3"
+                      ></textarea>
+                      <div class="invalid-feedback">
+                        debe ingresar un mensaje
+                      </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary mb-3">
+                      Enviar
+                    </button>
+                  </div>
+                  </form>
+                
               </div>
-              
-              <form class="form-trabaja-con-nosotros" autocomplete="off">
-                <div class="mb-3">
-                  <label for="rutInput" class="form-label">Rut</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="rutInput"
-                    aria-describedby="rutHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese un rut valido. Ejemplo: 12345678-9
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="nombreInput" class="form-label">Nombre</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="nombreInput"
-                    aria-describedby="nombreHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese un nombre valido. Entre 3 a 20 caracteres
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="apellidoPaternoInput" class="form-label"
-                    >Apellido Paterno</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="apellidoPaternoInput"
-                    aria-describedby="apellidoPaternoHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese un apellido valido. Entre 3 a 20 caracteres
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="apellidoMaternoInput" class="form-label"
-                    >Apellido Materno</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="apellidoMaternoInput"
-                    aria-describedby="apellidoMaternoHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese un apellido valido. Entre 3 a 20 caracteres
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="edadInput" class="form-label">Edad</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="edadInput"
-                    aria-describedby="edadHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese una edad valida. Entre 18 a 35 annos
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label" for="generoInput">Genero</label>
-                  <select class="form-select" id="generoInput">
-                    <option selected>Elegir...</option>
-                    <option value="1">Hombre</option>
-                    <option value="2">Mujer</option>
-                    <option value="3">Otro</option>
-                  </select>
-                  <div class="invalid-feedback">seleccione una opcion</div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="celularInput" class="form-label">Celular</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="celularInput"
-                    aria-describedby="edadHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese 8 numeros para completar su celular
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="emailInput" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="emailInput"
-                    aria-describedby="emailHelp"
-                  />
-                  <div class="invalid-feedback">
-                    ingrese un formato valido. xxx@xxx.xxx
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="textAreaInput"
-                    >Escribe sobre tu experiencia</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="textAreaInput"
-                    rows="3"
-                  ></textarea>
-                  <div class="invalid-feedback">debe ingresar un mensaje</div>
-                </div>
-
-                <button type="button" class="btn btn-primary">Enviar</button>
-              </form>
             </div>
           </div>
         </div>
@@ -340,7 +350,6 @@
 
     <!-- los script los cargamos al final -->
     <script src="../scripts/jquery-3.2.1.min.js"></script>
-    <script src="../scripts/contadorCarrito.js"></script>
     <script src="../scripts/validacionFormNosotros.js"></script>
 
     <script

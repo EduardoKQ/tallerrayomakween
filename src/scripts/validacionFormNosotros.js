@@ -42,14 +42,14 @@ function validar(id, regex) {
 
 // a. Rut: largo entre 9 y 10 caracteres.
 function validarRut() {
-  const re = /[0-9]{7,9}-([0-9]|k|K)/;
+  const re = /^([0-9]{7,9}-([0-9]|k|K))/;
   let id = "#rutInput";
   return validar(id, re);
 }
 // ! el regex acepta numeros
 // b. Nombre: largo entre 3 y 20 caracteres.
 function validarNombre() {
-  const re = /[^0-9]{3,20}/;
+  const re = /^([^0-9]{3,20})/;
   let id = "#nombreInput";
   return validar(id, re);
 }
@@ -57,7 +57,7 @@ function validarNombre() {
 //! el regex acepta numeros
 // c. Apellido paterno: largo entre 3 y 20 caracteres.
 function validarApPaterno() {
-  const re = /[^0-9]{3,20}/;
+  const re = /^([^0-9]{3,20})/;
   let id = "#apellidoPaternoInput";
   return validar(id, re);
 }
@@ -65,21 +65,21 @@ function validarApPaterno() {
 //! el regex acepta numeros
 // d. Apellido materno: largo entre 3 y 20 caracteres.
 function validarApMaterno() {
-  const re = /[^0-9]{3,20}/;
+  const re = /^([^0-9]{3,20})/;
   let id = "#apellidoMaternoInput";
   return validar(id, re);
 }
 
 // e. Edad: entre 18 y 35 años.
 function validarEdad() {
-  const re = /((1[8-9])|(2[0-9])|(3[0-5]))$/;
+  const re = /^(((1[8-9])|(2[0-9])|(3[0-5])))$/;
   let id = "#edadInput";
   return validar(id, re);
 }
 
 // f. Género: que sea seleccionado un género de la lista.
 function validarGenero() {
-  const re = /([1-9])$/;
+  const re = /^(([1-9]))$/;
   let id = "#generoInput";
   return validar(id, re);
 }
@@ -87,14 +87,14 @@ function validarGenero() {
 // g. Celular: largo 8
 // +56 9 XXXX XXXX
 function validarCelular() {
-  const re = /[1-9]{8}$/;
+  const re = /^([1-9]{8})$/;
   let id = "#celularInput";
   return validar(id, re);
 }
 
 // formato email xxx@xxx.xxx
 function validarEmail() {
-  const re = /.+@.+\..+/;
+  const re = /^(.+@.+\..+)/;
   let id = "#emailInput";
   return validar(id, re);
 }
@@ -122,7 +122,7 @@ $(document).ready(function () {
     console.log(e);
     let esFormularioValido = false;
 
-    //validar rut
+    //validar rut 
     let esRutValido = validarRut();
     //validar nombre
     let esNombreValido = validarNombre();
